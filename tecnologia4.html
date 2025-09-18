@@ -1,40 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tecnología 4º ESO</title>
-<style>
-body{font-family: Arial, sans-serif;margin:0;background:#f6fbff;color:#333;}
-header{background:linear-gradient(135deg,#4facfe,#00f2fe);color:white;padding:24px 16px;text-align:center}
-.container{max-width:900px;margin:24px auto;padding:0 16px}
-.card{background:white;border-radius:12px;padding:18px;box-shadow:0 4px 12px rgba(0,0,0,0.1);margin-bottom:16px}
-h1,h2{margin:0 0 12px 0;color:#0b3347}
-p{margin:8px 0;line-height:1.5}
-ul,ol{margin:8px 0 8px 20px}
-.btn{display:inline-block;background:#4facfe;color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
-table{width:100%;border-collapse:collapse;margin-top:12px}
-th,td{border:1px solid #ccc;padding:8px;text-align:center}
-th{background:#e9f5ff}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnología 4º ESO</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #8e2de2, #ff6a88);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      width: 90%;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .card h2 {
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    /* Botones activos */
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #ffe066;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background: #ffd633;
+    }
+
+    /* Tarjetas desactivadas */
+    .card.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .card.disabled a {
+      background: #aaa;
+      color: #666;
+      cursor: not-allowed;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.25);
+      width: 100%;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin: 1rem auto;
+      padding: 0.5rem 1rem;
+      background: #ffe066;
+      color: #000;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .back-link:hover {
+      background: #ffd633;
+    }
+  </style>
 </head>
 <body>
-<header>
-<h1>Tecnología 4º ESO</h1>
-</header>
+  <header>
+    <h1>Tecnología 4º ESO</h1>
+    <p>Explora las diferentes situaciones de aprendizaje</p>
+  </header>
 
-<main class="container">
+  <main>
+    <!-- Activa -->
+    <div class="card">
+      <h2>Línea Temporal</h2>
+      <p>Principales hitos tecnológicos y su impacto en la sociedad.</p>
+      <a href="linea-temporal.html">Ver más</a>
+    </div>
 
-<section class="card">
-<h2>Ejercicio: Línea temporal</h2>
-<p>
-En este proyecto, el grupo elaborará una <strong>línea temporal interactiva</strong> con <a href="https://www.timetoast.com" target="_blank">Timetoast</a> sobre la evolución de la tecnología. 
-Cada estudiante investigará una época histórica distinta y, al final, uniremos todas las aportaciones en un único producto común.
-Tras la presentación, realizaremos un análisis crítico sobre la sociedad actual, el impacto de la tecnología en el medio ambiente y posibles soluciones sostenibles.
-</p>
-</section>
+    <!-- Desactivadas -->
+    <div class="card disabled">
+      <h2>Situación de Aprendizaje 2</h2>
+      <p>Diseño y modelado 3D.</p>
+      <a href="#">Próximamente</a>
+    </div>
 
-<section class="card">
+    <div class="card disabled">
+      <h2>Situación de Aprendizaje 3</h2>
+      <p>Proyecto final integrador.</p>
+      <a href="#">Próximamente</a>
+    </div>
+  </main>
+
+  <a class="back-link" href="index.html">⬅ Volver al inicio</a>
+
+  <footer>
+    &copy; 2025 - Página de documentación de 4º ESO
+  </footer>
+</body>
+</html><section class="card">
 <h2>Orden cronológico</h2>
 <p>Cada alumno investigará una de estas épocas históricas:</p>
 <ul>
