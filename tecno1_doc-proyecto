@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mini-proyecto tecnológico – 1º ESO</title>
+<style>
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #56ab2f, #a8e063); /* gama verde-amarillo */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 16px;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.95);
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+    color: #0b3347; /* texto oscuro */
+  }
+
+  h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.35rem;
+    color: #56ab2f; /* título en verde */
+  }
+
+  p, ul, ol {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    color: #0b3347;
+  }
+
+  ul, ol {
+    padding-left: 1.2rem;
+  }
+
+  li {
+    margin-bottom: 0.4rem;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #ffe066;
+    color: #000;
+    padding: 10px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.2s;
+    margin-top: 1rem;
+  }
+
+  .btn:hover { background: #ffd633; }
+
+  footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.9);
+    background: linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.12));
+  }
+
+  @media (max-width:600px){
+    .card { padding: 16px; }
+    h2 { font-size: 1.2rem; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Mini-proyecto tecnológico – 1º ESO</h1>
+</header>
+
+<main class="container">
+
+<section class="card">
+<h2>Objetivo</h2>
+<p>Aplicar el método de proyectos para resolver un problema cercano, desde la idea hasta la construcción de un prototipo y su presentación.</p>
+</section>
+
+<section class="card">
+<h2>Entrega final</h2>
+<p>Documento digital + croquis en papel.</p>
+</section>
+
+<section class="card">
+<h2>Qué debes incluir en tu documento digital</h2>
+<ol>
+  <li><strong>Nombre del proyecto</strong><br>
+      Título claro que describa tu proyecto.<br>
+      Ejemplo: “Organizador de material reciclado para el aula”
+  </li>
+  <li><strong>Descripción del problema</strong><br>
+      Explica cuál es el problema que quieres resolver.<br>
+      Indica por qué es importante y cómo afecta a tu entorno.
+  </li>
+  <li><strong>Croquis (entregar en papel)</strong><br>
+      Dibuja tu solución en papel.<br>
+      Incluye notas sobre materiales, medidas aproximadas o detalles importantes.<br>
+      Entregar junto con el prototipo al final del proyecto.
+  </li>
+  <li><strong>Materiales y recursos</strong><br>
+      <strong>Prototipo:</strong> lista de materiales que usarás para construir el prototipo (ej. cartón, cinta, clips).<br>
+      <strong>Producto final:</strong> lista de materiales que gastarías en la versión definitiva del proyecto (ej. madera, pegamento, pintura).
+  </li>
+  <li><strong>Planificación de tareas individuales</strong><br>
+      Indica qué ha hecho cada miembro del grupo.<br>
+      Ejemplo:<br>
+      Ana: dibujó el croquis y buscó información sobre materiales<br>
+      Luis: construyó el prototipo y probó su funcionamiento<br>
+      Marta: redactó la descripción y recopiló fotos del prototipo
+  </li>
+  <li><strong>Pruebas y ajustes</strong><br>
+      Explica cómo comprobaréis que el prototipo funciona correctamente.<br>
+      Describe problemas que aparecieron y cómo los resolvisteis.
+  </li>
+  <li><strong>Conclusión / aprendizaje</strong><br>
+      Reflexiona sobre lo que habéis aprendido con el proyecto.<br>
+      Qué os ha gustado más, qué ha sido más difícil y cómo mejoraríais la solución.
+  </li>
+</ol>
+</section>
+
+<section class="card">
+<h2>Formato y entrega</h2>
+<p>Documento digital (Word, Google Docs o similar), con todos los apartados completos.</p>
+<p>Croquis en papel, entregado junto con el prototipo.</p>
+<p>Buen diseño, organización clara y lenguaje comprensible.</p>
+<p>Entregar al final del proyecto, antes de la exposición oral.</p>
+</section>
+
+<p style="text-align:center;">
+<a href="index.html" class="btn">Volver a inicio</a>
+</p>
+
+</main>
+
+<footer>
+  &copy; 2025 - Página de documentación de 1º ESO
+</footer>
+</body>
+</html>
