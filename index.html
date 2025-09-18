@@ -3,63 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio laupons</title>
+  <title>Documentación de Tecnología</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #4facfe, #00f2fe);
-      color: #333;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 2rem 1rem;
       text-align: center;
     }
 
-    h1 {
-      margin-bottom: 40px;
-      font-size: 2.5em;
-      color: #fff;
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
     }
 
-    .botones {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
 
-    a {
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      width: 90%;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .card h2 {
+      margin-bottom: 1rem;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
       text-decoration: none;
+      transition: background 0.3s;
     }
 
-    button {
-      background-color: #fff;
-      color: #333;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    .card a:hover {
+      background: #e6b800;
     }
 
-    button:hover {
-      background-color: #333;
-      color: #fff;
-      transform: scale(1.05);
+    footer {
+      margin-top: auto;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.2);
+      width: 100%;
     }
   </style>
 </head>
 <body>
-  <h1>Documentación de Clases</h1>
-  <div class="botones">
-    <a href="tecnologia1.html"><button>Tecnología y Digitalización I</button></a>
-    <a href="tecnologia2.html"><button>Tecnología y Digitalización II</button></a>
-    <a href="tecnologia4.html"><button>Tecnología 4º ESO</button></a>
-  </div>
+  <header>
+    <h1>Documentación de Tecnología</h1>
+    <p>Accede a los contenidos y actividades de cada curso</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Tecnología y Digitalización I</h2>
+      <a href="tecnologia1.html">Entrar</a>
+    </div>
+
+    <div class="card">
+      <h2>Tecnología y Digitalización II</h2>
+      <a href="tecnologia2.html">Entrar</a>
+    </div>
+
+    <div class="card">
+      <h2>Tecnología 4º ESO</h2>
+      <a href="tecnologia4.html">Entrar</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 - Página de documentación de clase
+  </footer>
 </body>
 </html>
