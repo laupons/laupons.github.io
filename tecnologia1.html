@@ -3,42 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tecnología y Digitalización I</title>
+  <title>Tecnología y Digitalización I — 1º ESO</title>
   <style>
-    body {font-family: Arial, sans-serif; margin:0; background:#f6fbff; color:#333;}
-    header {background:linear-gradient(135deg,#4facfe,#00f2fe); color:white; padding:24px 16px; text-align:center;}
-    .container {max-width:900px; margin:24px auto; padding:0 16px;}
-    .card {background:white; border-radius:12px; padding:18px; box-shadow:0 4px 12px rgba(0,0,0,0.1); margin-bottom:16px;}
-    h1,h2 {margin:0 0 12px 0; color:#0b3347;}
-    p {line-height:1.5;}
-    .btn {display:inline-block; background:#4facfe; color:white; padding:10px 14px; border-radius:10px; text-decoration:none; font-weight:600;}
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #56ab2f, #a8e063); /* verde-amarillo */
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.95);
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+      color: #0b3347;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.22);
+    }
+
+    .card.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      cursor: default;
+      transform: none;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    }
+
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.35rem;
+      color: #56ab2f;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+      color: #0b3347;
+    }
+
+    a {
+      color: #56ab2f;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    .btn {
+      display: inline-block;
+      background: #ffe066;
+      color: #000;
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background 0.2s;
+      margin-top: 1rem;
+    }
+
+    .btn:hover { background: #ffd633; }
+
+    @media (max-width:600px){
+      .card { padding: 16px; }
+      h2 { font-size: 1.2rem; }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Tecnología y Digitalización I — 1º ESO</h1>
-  </header>
+<header>
+  <h1>Tecnología y Digitalización I — 1º ESO</h1>
+</header>
 
-  <main class="container">
-    <section class="card">
-      <h2>Actividad: Resolución de Problemas</h2>
-      <!-- Canva embebido -->
-      <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-      padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-      border-radius: 8px; will-change: transform;">
-        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-          src="https://www.canva.com/design/DAGygfOKD3c/y95UTide5ml0RdKr2IWsag/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-        </iframe>
-      </div>
-      <p>
-        <a href="https://www.canva.com/design/DAGygfOKD3c/y95UTide5ml0RdKr2IWsag/view?utm_content=DAGygfOKD3c&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
-        target="_blank" rel="noopener">Resolución de Problemas</a> de Laura Pons Castelló
-      </p>
-    </section>
+<main class="container">
 
-    <p style="text-align:center; margin:24px 0;">
-      <a href="index.html" class="btn">Volver a inicio</a>
+  <!-- Actividad existente: Resolución de Problemas -->
+  <section class="card">
+    <h2>Actividad: Resolución de Problemas</h2>
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%;
+    padding-bottom: 0; box-shadow: 0 2px 8px rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+      <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+        src="https://www.canva.com/design/DAGygfOKD3c/y95UTide5ml0RdKr2IWsag/view?embed" allowfullscreen>
+      </iframe>
+    </div>
+    <p>
+      <a href="https://www.canva.com/design/DAGygfOKD3c/y95UTide5ml0RdKr2IWsag/view?utm_content=DAGygfOKD3c&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+      target="_blank" rel="noopener">Resolución de Problemas</a> de Laura Pons Castelló
     </p>
-  </main>
+  </section>
+
+  <!-- Mini-proyecto activo -->
+  <section class="card">
+    <h2>Mini-proyecto tecnológico</h2>
+    <p>Aplicar el método de proyectos para resolver un problema cercano, desde la idea hasta la construcción de un prototipo y su presentación.</p>
+    <a href="tecno3_doc-proyecto.html" class="btn">Ir al proyecto</a>
+  </section>
+
+  <!-- Futuras actividades desactivadas -->
+  <section class="card disabled">
+    <h2>Actividad 3: Próxima sesión</h2>
+    <p>Contenido pendiente de activación.</p>
+  </section>
+
+  <section class="card disabled">
+    <h2>Actividad 4: Próxima sesión</h2>
+    <p>Contenido pendiente de activación.</p>
+  </section>
+
+</main>
+
+<p style="text-align:center; margin:24px 0;">
+  <a href="index.html" class="btn">Volver a inicio</a>
+</p>
+
 </body>
 </html>
+
