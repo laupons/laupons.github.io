@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projectes de Tecnologia – 1r d’ESO</title>
-
+<title>Mini-projecte tecnològic – 1r d’ESO</title>
 <style>
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -18,7 +17,7 @@ header {
   color: white;
   text-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
-header h1 { margin:0; font-size: 2.2rem; }
+header h1 { margin:0; font-size: 2rem; }
 
 .container { max-width: 900px; margin: 2rem auto; padding: 0 16px; }
 
@@ -37,12 +36,17 @@ header h1 { margin:0; font-size: 2.2rem; }
   align-items: center;
   margin-bottom: 12px;
 }
-.section h2 span { font-size: 1.5rem; margin-right: 10px; }
+
+.section h2 span {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
 
 .section p, .section ul, .section ol {
   margin: 0.5rem 0;
   line-height: 1.6;
 }
+
 .section ul, .section ol { padding-left: 1.2rem; }
 
 li { margin-bottom: 0.4rem; }
@@ -58,7 +62,13 @@ li { margin-bottom: 0.4rem; }
   transition: background 0.2s;
   margin-top: 1rem;
 }
+
 .btn:hover { background: #ffd633; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+th { background: #e9f5d7; }
+
 footer {
   text-align: center;
   padding: 1rem;
@@ -66,49 +76,144 @@ footer {
   color: rgba(255,255,255,0.9);
   background: linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.12));
 }
+
+@media (max-width:600px){
+  .section { padding: 16px; }
+  .section h2 { font-size: 1.3rem; }
+}
 </style>
 </head>
-
 <body>
 
 <header>
-<h1>Projectes de Tecnologia – 1r d’ESO</h1>
+<h1>Mini-projecte tecnològic – 1r d’ESO</h1>
 </header>
 
 <main class="container">
 
-<!-- ACTIVITAT 1 -->
+<!-- Introducció -->
 <div class="section">
-<h2><span>🛠️</span> Activitat 1 – Mini-projecte tecnològic</h2>
-<p>En aquesta activitat aprendrem a identificar un problema real, pensar una solució i fabricar un prototip amb materials senzills.</p>
-<p>Inclou: document digital, croquis, prototip i exposició final.</p>
-
-<a href="tecno1_projecte-mini.html" class="btn">🔗 Obrir activitat 1</a>
+<h2><span>💡</span> Introducció al projecte</h2>
+<p>Benvinguts i benvingudes al projecte! Ací aprendrem a resoldre un problema del nostre dia a dia aplicant el mètode de projectes: passarem de la idea inicial a la construcció d’un prototip. Treballareu en equip, anireu deixant constància de cada pas i al final exposareu el vostre treball a la classe.</p>
+<p>Durant el projecte fareu:</p>
+<ul>
+<li>Dissenys i esbossos de la vostra idea</li>
+<li>Un document digital amb tot el projecte</li>
+<li>Construcció i proves del prototip</li>
+<li>Exposició oral amb les vostres conclusions</li>
+</ul>
 </div>
 
-<!-- ACTIVITAT 2 -->
+<!-- Document Digital Explicat -->
 <div class="section">
-<h2><span>🔐</span> Activitat 2 – Investigació i cartell de seguretat informàtica</h2>
-<p>En aquesta activitat investigarem riscos digitals, bones pràctiques i com utilitzar Internet de manera segura.  
-Després creareu un cartell de conscienciació i, si voleu, podreu exposar-lo a classe.</p>
+<h2><span>📄</span> Document digital del projecte</h2>
+<p>Aquest document serà la vostra guia en tot moment. L’heu d’omplir amb cura i claredat, posant-hi tota la informació necessària per a poder construir i presentar el prototip.</p>
 
+<h3>1️⃣ Nom del projecte</h3>
+<p>Poseu un títol que descriga clarament la vostra idea. Exemple: <em>“Organitzador de material reciclat per a la classe”</em>.</p>
+
+<h3>2️⃣ Descripció del problema</h3>
+<p>Expliqueu quin és el problema que voleu resoldre, per què és important i com afecta al vostre entorn. Feu-ho amb exemples clars perquè qualsevol ho puga entendre.</p>
+
+<h3>3️⃣ Croquis (en paper)</h3>
+<p>Dibuixeu la vostra proposta en paper. Afegiu notes sobre materials, mides aproximades i altres detalls importants. Aquest dibuix servirà de base per al prototip.</p>
+
+<h3>4️⃣ Materials i recursos</h3>
+<p>Feu una llista amb els materials que necessitareu per al prototip i amb els que faríeu servir si construíreu la versió definitiva:</p>
 <ul>
-<li>Es treballa en grup</li>
-<li>Document d’investigació obligatori en <strong>Word (.docx)</strong></li>
-<li>Tota l’activitat s’ha de fer en <strong>valencià</strong></li>
-<li>Inclou investigació, cartell en cartolina i exposició voluntària</li>
+<li><strong>Prototip:</strong> materials senzills com cartró, clips o cinta adhesiva</li>
+<li><strong>Producte final:</strong> materials més resistents com fusta, cola forta o pintura</li>
 </ul>
 
-<a href="tecno1_projecte-seguretat.html" class="btn">🔗 Obrir activitat 2</a>
+<h3>5️⃣ Planificació de tasques</h3>
+<p>Repartiu les feines entre els membres del grup. Exemple:</p>
+<ul>
+<li>Ana: fa el croquis i busca informació sobre materials</li>
+<li>Lluís: construeix el prototip i fa les proves</li>
+<li>Marta: escriu la descripció i fa fotos del prototip</li>
+</ul>
+
+<h3>6️⃣ Proves i millores</h3>
+<p>Expliqueu com comprovareu que el prototip funciona bé i quins problemes heu trobat i com els heu anat solucionant.</p>
+
+<h3>7️⃣ Conclusions i aprenentatge</h3>
+<p>Feu una reflexió: què heu aprés, què us ha agradat més, què us ha costat més i què milloraríeu de la vostra proposta.</p>
+</div>
+
+<!-- Sessions -->
+<div class="section">
+<h2><span>🗓️</span> Sessions del projecte</h2>
+<ul>
+<li><strong>Part 1 – Documentació</strong>: omplireu el document digital amb tot el que aneu fent.</li>
+<li><strong>Part 2 – Prototipat</strong>: construireu el prototip amb materials senzills i fareu proves.</li>
+<li><strong>Part 3 – Exposició</strong>: presentareu el vostre projecte a la classe i compartireu les conclusions.</li>
+</ul>
+</div>
+
+<!-- Avaluació -->
+<div class="section">
+<h2><span>✅</span> Avaluació del projecte</h2>
+<p>Així es valorarà el vostre treball:</p>
+<ul>
+<li>Document digital: 40%</li>
+<li>Prototip: 30%</li>
+<li>Exposició oral: 20%</li>
+<li>Actitud i treball en grup: 10%</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Criteri</th>
+<th>Pes %</th>
+<th>4 - Excel·lent</th>
+<th>3 - Adequat</th>
+<th>2 - Bàsic</th>
+<th>1 - Inicial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document digital del projecte</td>
+<td>40%</td>
+<td>Complet i ben organitzat, amb tots els apartats</td>
+<td>Complet però amb algun apartat poc detallat</td>
+<td>Falten parts importants</td>
+<td>Molt incomplet o desordenat</td>
+</tr>
+<tr>
+<td>Prototip</td>
+<td>30%</td>
+<td>Funciona bé i és coherent amb el croquis</td>
+<td>Funciona a mitges</td>
+<td>Poc funcional</td>
+<td>No reflecteix la idea</td>
+</tr>
+<tr>
+<td>Exposició oral</td>
+<td>20%</td>
+<td>Clara i segura</td>
+<td>Adequada però amb dubtes</td>
+<td>Poc clara</td>
+<td>No aconsegueix explicar</td>
+</tr>
+<tr>
+<td>Actitud i treball en grup</td>
+<td>10%</td>
+<td>Participa i ajuda activament</td>
+<td>Ajuda amb alguna distracció</td>
+<td>Poca participació</td>
+<td>Mala actitud</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 <p style="text-align:center;">
-<a href="tecnologia1.html" class="btn">🏡 Tornar a l’índex</a>
+<a href="tecnologia1.html" class="btn">Tornar a l’índex</a>
 </p>
 
 </main>
-
-<footer>&copy; 2025 - Pàgina de projectes de 1r d’ESO</footer>
-
+<footer>&copy; 2025 - Pàgina de documentació de 1r d’ESO</footer>
 </body>
 </html>
